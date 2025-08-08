@@ -2,102 +2,82 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="font-sans text-gray-800 bg-white">
+    {/* Navbar */}
+    <header className="bg-green-800 text-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 className="text-2xl font-bold">Madarsa An-Noor</h1>
+        <nav className="space-x-6 hidden md:block">
+          <a href="#about" className="hover:underline">About</a>
+          <a href="#courses" className="hover:underline">Courses</a>
+          <a href="#admission" className="hover:underline">Admission</a>
+          <a href="#contact" className="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    {/* Hero Section */}
+    <section className="bg-[url('/hero-bg.jpg')] bg-cover bg-center text-white h-[90vh] flex items-center justify-center">
+      <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-xl">
+        <h2 className="text-4xl font-bold mb-4">Welcome to Madarsa An-Noor</h2>
+        <p className="text-lg">An Islamic Institution Dedicated to Quranic and Islamic Studies</p>
+      </div>
+    </section>
+
+    {/* About Section */}
+    <section id="about" className="py-16 px-6 bg-gray-50">
+      <div className="max-w-4xl mx-auto text-center">
+        <h3 className="text-3xl font-semibold mb-4">About Us</h3>
+        <p className="text-lg leading-relaxed">Madarsa An-Noor has been providing quality Islamic education for over 15 years. We aim to nurture young minds with the knowledge of the Holy Quran, Hadith, and other Islamic sciences. Our environment is spiritual, peaceful, and focused on personal development through faith.</p>
+      </div>
+    </section>
+
+    {/* Courses Section */}
+    <section id="courses" className="py-16 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-3xl font-semibold text-center mb-12">Our Courses</h3>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="text-xl font-bold mb-2">Hifz-ul-Quran</h4>
+            <p>Memorization of the entire Quran with tajweed under expert guidance.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="text-xl font-bold mb-2">Aalim Course</h4>
+            <p>In-depth study of Islamic jurisprudence, Hadith, Arabic, and more.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h4 className="text-xl font-bold mb-2">Basic Urdu & Arabic</h4>
+            <p>Language classes designed to understand and read Islamic texts confidently.</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </section>
+
+    {/* Admission Section */}
+    <section id="admission" className="py-16 px-6 bg-green-50">
+      <div className="max-w-3xl mx-auto text-center">
+        <h3 className="text-3xl font-semibold mb-4">Admissions Open</h3>
+        <p className="mb-6">Apply now for the upcoming academic session. Limited seats available.</p>
+        <a href="/admission" className="inline-block bg-green-700 text-white px-6 py-3 rounded hover:bg-green-900">Apply Now</a>
+      </div>
+    </section>
+
+    {/* Contact Section */}
+    <section id="contact" className="py-16 px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        <h3 className="text-3xl font-semibold mb-4">Contact Us</h3>
+        <p className="mb-4">📍 Madarsa Street, Khalilabad, UP</p>
+        <p className="mb-4">📞 +91-9876543210</p>
+        <p className="mb-4">✉️ info@madarsaan-noor.org</p>
+      </div>
+    </section>
+
+    {/* Footer */}
+    <footer className="bg-green-800 text-white py-6">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <p>&copy; {new Date().getFullYear()} Madarsa An-Noor. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
   );
 }
