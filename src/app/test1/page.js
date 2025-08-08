@@ -161,6 +161,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Phone, Mail, MapPin, Star, Users, BookOpen, Award } from 'lucide-react';
+import Header from '@/components/client/header';
 
 export default function Home() {
   const [contactForm, setContactForm] = useState({
@@ -276,39 +277,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Navigation */}
-      <nav className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <div className="text-emerald-600 text-2xl font-bold">🕌</div>
-                <span className="ml-2 text-xl font-bold text-gray-800">Al-Noor Madrasa</span>
-              </div>
-            </div>
-            
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Home</Link>
-              <Link href="/about" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">About</Link>
-              <Link href="/courses" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Courses</Link>
-              <Link href="/admission" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Admission</Link>
-              <Link href="/gallery" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Gallery</Link>
-              <Link href="/notices" className="text-gray-700 hover:text-emerald-600 px-3 py-2 font-medium">Notices</Link>
-              <Link href="/donation" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Donate</Link>
-            </div>
+        {/* Navigation */}
 
-            {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
-              <button className="text-gray-700 hover:text-emerald-600">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+        <Header/>
 
+   
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
         <div className="absolute inset-0 bg-black opacity-50"></div>
