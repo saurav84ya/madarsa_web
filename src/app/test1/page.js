@@ -270,12 +270,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Al-Noor Islamic Madrasa - Excellence in Islamic Education</title>
-        <meta name="description" content="Leading Islamic educational institute providing comprehensive Quran memorization, Islamic studies, and academic programs." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    
 
         {/* Navigation */}
 
@@ -283,27 +278,7 @@ export default function Home() {
 
    
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to Al-Noor Islamic Madrasa
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Nurturing minds and souls through authentic Islamic education combined with modern academic excellence
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/admission" className="bg-yellow-500 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-flex items-center">
-                Apply Now <ChevronRight className="ml-2 w-5 h-5" />
-              </Link>
-              <Link href="/about" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
-                Learn More
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Stats Section */}
       <section className="py-16 bg-gray-50">

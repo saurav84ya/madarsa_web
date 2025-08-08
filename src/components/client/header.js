@@ -21,7 +21,7 @@ export default function Header() {
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <div className="text-emerald-600 text-2xl font-bold">🕌</div>
-                <span className="ml-2 text-lg md:text-xl font-bold text-gray-800">XYZ Madrasa</span>
+                <span className="ml-2 text-lg md:text-xl font-bold text-gray-800">MIAQM</span>
               </div>
             </div>
             
