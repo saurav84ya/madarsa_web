@@ -19,18 +19,23 @@ export default function Header() {
 
 
             <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
+              
+
+             <Link href='/home' >
+              <div className="flex-shrink-0 flex  items-center">
                 <div className="text-emerald-600 text-2xl font-bold">🕌</div>
                 <span className="ml-2 text-lg md:text-xl font-bold text-gray-800">MIAQM</span>
-              </div>
+              </div></Link>
+
             </div>
             
             <div className="hidden lg:flex items-center space-x-5">
-              <Link href="/" className={navLinksClasssName}>Home</Link>
-              <Link href="/about" className={navLinksClasssName}>About</Link>
-              <Link href="/courses" className={navLinksClasssName}>Courses</Link>
-              <Link href="/admission" className={navLinksClasssName}>Admission</Link>
-              <Link href="/notices" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Notices</Link>
+              <Link href="/home" className={navLinksClasssName}>Home</Link>
+              <Link href="/home/about" className={navLinksClasssName}>About</Link>
+              <Link href="/home/courses" className={navLinksClasssName}>Courses</Link>
+              <Link href="/home/admission" className={navLinksClasssName}>Admission</Link>
+               <Link href="/home/gallery" className={navLinksClasssName}>Gallery</Link>
+              <Link href="/home/notices" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Notices</Link>
               {/* <Link href="/donation" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Donate</Link> */}
             </div>
 
