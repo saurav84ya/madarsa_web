@@ -4,7 +4,7 @@ import React from 'react'
 export default function HeaderMenuMobile({ navLinksClasssName, open,setOpen }) {
   return (
     <div className={`
-      fixed top-16 left-0 right-0 bg-white shadow-lg z-50 rounded-2xl
+      fixed top-16 left-0 right-0 bg-white shadow-lg z-50 rounded-b-2xl
       transition-all duration-300 ease-in-out transform
       ${open ? 
         'translate-y-0 opacity-100 visible' : 
