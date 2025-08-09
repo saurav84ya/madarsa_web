@@ -524,9 +524,9 @@ const DonationPage = () => {
                             <BookOpen className="w-8 h-8" />
                         </div>
                         <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-6">
-                            "The example of those who spend their wealth in the way of Allah is like a seed
+                            &quot;The example of those who spend their wealth in the way of Allah is like a seed
                             of grain which grows seven spikes; in each spike is a hundred grains.
-                            And Allah multiplies His reward for whom He wills."
+                            And Allah multiplies His reward for whom He wills.&quot;
                         </blockquote>
                         <cite className="text-xl text-emerald-200">— Quran 2:261</cite>
                     </div>
@@ -534,8 +534,8 @@ const DonationPage = () => {
                     <div className="border-t border-white/30 pt-8">
                         <p className="text-xl mb-4">Prophet Muhammad ﷺ said:</p>
                         <p className="text-2xl font-medium italic">
-                            "Charity does not decrease wealth, and Allah increases His servant in honor
-                            when he forgives, and no one humbles himself for Allah's sake but Allah raises him."
+                            &quot;Charity does not decrease wealth, and Allah increases His servant in honor
+                            when he forgives, and no one humbles himself for Allah&apos;s sake but Allah raises him.&quot;
                         </p>
                     </div>
                 </div>
