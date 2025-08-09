@@ -37,10 +37,9 @@ export default function FooterHomePage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <div className="space-y-2 text-gray-400">
-                <p>123 Education Street</p>
-                <p>Islamic Quarter, City 12345</p>
-                <p>Phone: +1 (555) 123-4567</p>
-                <p>Email: info@miaqm.edu</p>
+                <p> 📍 123 Education Street <br /> Islamic Quarter, City 12345</p>
+                <p > ☎️ Phone: +1 (555) 123-4567</p>
+                <p> 📩 Email: info@miaqm.edu</p>
               </div>
             </div>
           </div>

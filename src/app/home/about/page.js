@@ -19,6 +19,8 @@ import {
 import Image from 'next/image';
 
 export default function page() {
+
+  const about1 =  '/about1.jpg'
 const teachers = [
   {
     name: "Maulana Imran Khan",
@@ -84,14 +86,11 @@ const teachers = [
   ];
   return (
     <div>
-       {/* Hero Section */}
-      <section className=" my-5 rounded-2xl relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-20">
-        {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
-
+  {/* Hero Section */}
+      <section className="relative rounded-2xl mt-5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6
-                          ">
-            About Madrasah Islamia Arabia Quran Memorization
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            About Madarsa Al-Hikmah
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             A place where faith meets education 🌙📚
@@ -106,7 +105,6 @@ const teachers = [
           </div>
         </div>
       </section>
-
 
 
 
