@@ -17,6 +17,7 @@ import {
   MapPin
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function page() {
 
@@ -379,12 +380,12 @@ const teachers = [
                   Discover how we can help your child grow in faith, knowledge, and character
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors">
+                  <Link href='/home/admission'  className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors">
                     Apply Now
-                  </button>
-                  <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-3 px-8 rounded-lg transition-colors">
-                    Visit Campus
-                  </button>
+                  </Link>
+                  <a className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-3 px-8 rounded-lg transition-colors">
+                   📍 Visit Campus
+                  </a>
                 </div>
               </div>
             </section>

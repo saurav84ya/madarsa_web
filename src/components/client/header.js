@@ -1,12 +1,31 @@
 'use client'
 import { CircleX, Menu } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import HeaderMenuMobile from './headerMenuMobile'
 
 export default function Header() {
 
   const [open , setOpen] = useState(false)
+   const menuRef = useRef(null);
+
+
+    useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Close menu if clicked outside and menu is open
+      if (open && menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener('mousedown', handleClickOutside);
+    
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [open]);
 
   const navLinksClasssName = "text-gray-700 text-center hover:text-emerald-600 px-3 py-2 font-medium"
   return (
@@ -51,11 +70,16 @@ export default function Header() {
 
           </div>
 
-<div className='flex lg:hidden  justify-center' >
-  {
-  open && <HeaderMenuMobile navLinksClasssName={navLinksClasssName} />
-}
-</div>
+          <div  ref={menuRef} >
+            <HeaderMenuMobile 
+  navLinksClasssName="px-4 py-2 text-gray-700 font-medium" 
+  open={open}  setOpen={setOpen}
+/>
+          </div>
+
+
+
+
 
 
         </div>
