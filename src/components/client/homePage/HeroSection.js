@@ -2,12 +2,12 @@ import Link from 'next/link'
 import React from 'react'
 import SlidingImages from './SlidingImages'
 import { ChevronRight, Star, Users, BookOpen, Award } from 'lucide-react';
-import About from './About';
-import Courses from './Courses';
-import Gallery from './Gallery';
+
 import Image from 'next/image';
+import About from './About';
+import Gallery from './Gallery';
+import Courses from './Courses';
 import Contact from './Contact';
-import FooterHomePage from './FooterHomePage';
 
 export default function HeroSection() {
 

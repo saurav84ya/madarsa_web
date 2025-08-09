@@ -1,5 +1,7 @@
-import FooterHomePage from "@/components/client/FooterHomePage";
 import Header from "@/components/client/header";
+import FooterHomePage from "@/components/client/homePage/FooterHomePage";
+
+
 
 
 export default function Layout({ children }) {
