@@ -47,10 +47,14 @@ export default function Header() {
               </div></Link>
 
             </div>
+
+            {/* certificates */}
             
             <div className="hidden lg:flex items-center space-x-5">
               <Link href="/home" className={navLinksClasssName}>Home</Link>
               <Link href="/home/about" className={navLinksClasssName}>About</Link>
+              <Link href="/home/certificates" className={navLinksClasssName}>Certificates</Link>
+
               <Link href="/home/courses" className={navLinksClasssName}>Courses</Link>
               <Link href="/home/admission" className={navLinksClasssName}>Admission</Link>
                <Link href="/home/gallery" className={navLinksClasssName}>Gallery</Link>

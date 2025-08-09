@@ -31,6 +31,16 @@ export default function HeaderMenuMobile({ navLinksClasssName, open,setOpen }) {
         >
           About
         </Link>
+
+        <Link 
+        onClick={() => setOpen(false)}
+          href="/home/certificates" 
+          className={`${navLinksClasssName} transition-colors duration-200 hover:text-emerald-600`}
+        >
+          Certificates
+        </Link>
+
+
         
         <Link 
         onClick={() => setOpen(false)}
