@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 import SlidingImages from './SlidingImages'
-import { ChevronRight, Phone, Mail, MapPin, Star, Users, BookOpen, Award } from 'lucide-react';
-import Image from 'next/image';
+import { ChevronRight, Star, Users, BookOpen, Award } from 'lucide-react';
 import About from './About';
 import Courses from './Courses';
 import Gallery from './Gallery';
+import Image from 'next/image';
+import Contact from './Contact';
+import FooterHomePage from './FooterHomePage';
 
 export default function HeroSection() {
 
@@ -14,6 +16,30 @@ export default function HeroSection() {
         { icon: BookOpen, number: "15+", label: "Courses" },
         { icon: Award, number: "25+", label: "Years Experience" },
         { icon: Star, number: "4.9", label: "Rating" }
+    ];
+
+    const testimonials = [
+        {
+            id: 1,
+            name: "Ahmed Hassan",
+            role: "Parent",
+            image: "/images/testimonial/1.webp",
+            text: "Al-Noor Madrasa has been instrumental in my child's Islamic and academic development. The teachers are highly qualified and caring."
+        },
+        {
+            id: 2,
+            name: "Fatima Ali",
+            role: "Alumni",
+            image: "/images/testimonial/2.png",
+            text: "I completed my Hifz here and the environment was perfect for learning. The balance between Islamic and modern education is excellent."
+        },
+        {
+            id: 3,
+            name: "Omar Rahman",
+            role: "Parent",
+            image: "/images/testimonial/3.jpg",
+            text: "The staff at Al-Noor Madrasa go above and beyond to ensure each student receives personalized attention and guidance."
+        }
     ];
 
     return (
@@ -57,7 +83,7 @@ export default function HeroSection() {
             </div>
 
             {/* Stats Section */}
-            <section className="py-16 ">
+            <section className="py-16 bg-gray-50 ">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {stats.map((stat, index) => (
@@ -75,14 +101,68 @@ export default function HeroSection() {
 
 
             {/* About Section */}
-            <About/>
+            <About />
 
 
             {/* Courses Section */}
-            <Courses/>
+            <Courses />
 
-             {/* Gallery Preview */}
-             <Gallery/>
+            {/* Gallery Preview*/}
+            <Gallery />
+
+
+
+            {/* Testimonials */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What People Say</h2>
+                        <p className="text-xl text-gray-600">Testimonials from our community</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {testimonials.map((testimonial) => (
+                            <div key={testimonial.id} className="bg-white rounded-xl p-8 shadow-lg">
+                                <div className="flex mb-4">
+                                    {[...Array(5)].map((_, i) => (
+                                        <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
+                                    ))}
+                                </div>
+                                <p className="text-gray-600 mb-6 italic">&quot;{testimonial.text}&quot;</p>
+
+                                <div className="flex items-center">
+                                    {/* Image container */}
+                                    <div className="w-12 h-12 bg-gray-300 rounded-full mr-4 overflow-hidden">
+                                        <Image
+                                            src={testimonial.image}
+                                            alt={testimonial.name}
+                                            height={48} // 12 * 4px = 48px
+                                            width={48}
+                                            className="object-cover"
+                                        />
+                                    </div>
+
+
+                                    {/* Name & role */}
+                                    <div>
+                                        <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                                        <p className="text-sm text-gray-500">{testimonial.role}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+
+                </div>
+            </section>
+
+
+               {/* Contact Section */}
+                        <Contact/>
+
+
+               
 
 
 

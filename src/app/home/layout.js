@@ -1,3 +1,4 @@
+import FooterHomePage from "@/components/client/FooterHomePage";
 import Header from "@/components/client/header";
 
 
@@ -9,6 +10,9 @@ export default function Layout({ children }) {
     <div className="max-w-7xl  mx-auto px-3 md:px-7 " >
           {children}
      </div>
+      {/* footer section */}
+
+                <FooterHomePage/>
     </div>
   );
 }

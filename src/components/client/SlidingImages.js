@@ -9,12 +9,12 @@ export default function SlidingImages() {
 
      const {isMobile} = useAppContext()
 
-    console.log("isMobile",isMobile)
+    // console.log("isMobile",isMobile)
 
     const slides = [
-        '/images/converted1.png',
-        '/images/converted2.png',
-        '/images/converted3.png'
+        '/images/1.jpg',
+        '/images/2.jpg',
+        '/images/3.jpg'
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
 

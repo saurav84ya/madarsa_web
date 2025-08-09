@@ -30,9 +30,8 @@ export default function Header() {
               <Link href="/about" className={navLinksClasssName}>About</Link>
               <Link href="/courses" className={navLinksClasssName}>Courses</Link>
               <Link href="/admission" className={navLinksClasssName}>Admission</Link>
-              <Link href="/gallery" className={navLinksClasssName}>Gallery</Link>
-              <Link href="/notices" className={navLinksClasssName}>Notices</Link>
-              <Link href="/donation" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Donate</Link>
+              <Link href="/notices" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Notices</Link>
+              {/* <Link href="/donation" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 font-medium">Donate</Link> */}
             </div>
 
             {/* Mobile menu button */}
