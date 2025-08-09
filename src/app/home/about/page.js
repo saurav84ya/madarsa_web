@@ -383,7 +383,7 @@ const teachers = [
                   <Link href='/home/admission'  className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors">
                     Apply Now
                   </Link>
-                  <a className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-3 px-8 rounded-lg transition-colors">
+                  <a href='' className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-3 px-8 rounded-lg transition-colors">
                    📍 Visit Campus
                   </a>
                 </div>
