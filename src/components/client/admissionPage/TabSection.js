@@ -172,7 +172,7 @@ export default function TabSection() {
 
 
        {/* Tab Navigation */}
-      <section className="py-8 rounded-2xl mt-4 bg-white shadow-lg   sticky top-18 z-40">
+      <section id='down' className="py-8 rounded-2xl mt-4 bg-white shadow-lg   sticky top-18 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex space-x-8 overflow-x-auto">
             {[

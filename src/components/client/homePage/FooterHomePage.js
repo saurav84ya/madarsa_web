@@ -26,10 +26,10 @@ export default function FooterHomePage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
-                <li><Link href="/courses" className="text-gray-400 hover:text-white">Courses</Link></li>
-                <li><Link href="/admission" className="text-gray-400 hover:text-white">Admission</Link></li>
-                <li><Link href="/gallery" className="text-gray-400 hover:text-white">Gallery</Link></li>
+                <li><Link href="/home/about" className="text-gray-400 hover:text-white">About Us</Link></li>
+                <li><Link href="/home/courses" className="text-gray-400 hover:text-white">Courses</Link></li>
+                <li><Link href="/home/admission" className="text-gray-400 hover:text-white">Admission</Link></li>
+                <li><Link href="/home/gallery" className="text-gray-400 hover:text-white">Gallery</Link></li>
                 {/* <li><Link href="/donation" className="text-gray-400 hover:text-white">Donate</Link></li> */}
               </ul>
             </div>

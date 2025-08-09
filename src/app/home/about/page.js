@@ -16,37 +16,56 @@ import {
   Mail,
   MapPin
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function page() {
-
-      const teachers = [
-    {
-      name: "Maulana Imran Khan",
-      expertise: "15+ years teaching Tafsir & Hadith",
-      specialty: "Known for student mentorship",
-      image: "/api/placeholder/150/150"
-    },
-    {
-      name: "Maulana Abdul Rahman",
-      expertise: "12+ years Quranic Studies",
-      specialty: "Expert in Tajweed",
-      image: "/api/placeholder/150/150"
-    },
-    {
-      name: "Ustaz Fatima Sheikh",
-      expertise: "10+ years Islamic Studies",
-      specialty: "Girls section coordinator",
-      image: "/api/placeholder/150/150"
-    }
-   ]; 
+const teachers = [
+  {
+    name: "Maulana Imran Khan",
+    expertise: "15+ years teaching Tafsir & Hadith",
+    specialty: "Known for student mentorship",
+    image: "/teacher1.jpg" // replace with your actual image paths
+  },
+  {
+    name: "Maulana Abdul Rahman",
+    expertise: "12+ years Quranic Studies",
+    specialty: "Expert in Tajweed",
+    image: "/teacher2.jpg"
+  },
+  {
+    name: "Ustaz Fatima Sheikh",
+    expertise: "10+ years Islamic Studies",
+    specialty: "Girls section coordinator",
+    image: "/teacher3.jpg"
+  },
+  {
+    name: "Ustazah Aisha Mohamed",
+    expertise: "8+ years Fiqh & Islamic Law",
+    specialty: "Women's spiritual counseling",
+    image: "/teacher4.jpg"
+  },
+  {
+    name: "Maulana Yusuf Ibrahim",
+    expertise: "20+ years Seerah & Islamic History",
+    specialty: "Public speaker & lecturer",
+    image: "/teacher5.jpg"
+  },
+  {
+    name: "Ustaz Hamza Abdullah",
+    expertise: "5+ years Arabic Language",
+    specialty: "Quran memorization specialist",
+    image: "/teacher6.jpg"
+  }
+];
 
   const facilities = [
-    { icon: Users, title: "Separate Classes", desc: "Boys & Girls sections" },
-    { icon: Library, title: "Library", desc: "Comprehensive Islamic & Academic books" },
-    { icon: Building, title: "Prayer Halls", desc: "Spacious halls for daily prayers" },
-    { icon: Monitor, title: "Computer Lab", desc: "Modern IT facilities" },
-    { icon: Home, title: "Hostel", desc: "Safe accommodation" },
-    { icon: Droplets, title: "Clean Water", desc: "Pure drinking water & hygiene" }
+    { icon: "👤", title: "Separate Classes", desc: "Boys & Girls sections" },
+    { icon: "📚", title: "Library", desc: "Comprehensive Islamic & Academic books" },
+    { icon: "🏠", title: "Prayer Halls", desc: "Spacious halls for daily prayers" },
+    { icon: "💻", title: "Computer Lab", desc: "Modern IT facilities" },
+     { icon: "💧", title: "Clean Water", desc: "Pure drinking water & hygiene" },
+    { icon: "🏡", title: "Hostel", desc: "Safe accommodation" }
+   
   ];
 
   const objectives = [
@@ -151,7 +170,10 @@ export default function page() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
                     <div className="flex items-center mb-6">
-                      <Heart className="w-12 h-12 text-emerald-600 mr-4" />
+                      {/* <Heart className="w-12 h-12 text-emerald-600 mr-4" /> */}
+
+                        <h1 className='text-4xl' >💖</h1>
+
                       <h3 className="text-2xl font-bold text-gray-900">Mission</h3>
                     </div>
                     <p className="text-lg text-gray-600 leading-relaxed">
@@ -162,7 +184,8 @@ export default function page() {
                   </div>
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
                     <div className="flex items-center mb-6">
-                      <Star className="w-12 h-12 text-emerald-600 mr-4" />
+                      {/* <Star className="w-12 h-12 text-emerald-600 mr-4" /> */}
+                       <h1 className='text-4xl' >⭐</h1>
                       <h3 className="text-2xl font-bold text-gray-900">Vision</h3>
                     </div>
                     <p className="text-lg text-gray-600 leading-relaxed">
@@ -213,17 +236,23 @@ export default function page() {
                   </p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {teachers.map((teacher, index) => (
-                    <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow">
-                      <div className="w-24 h-24 bg-emerald-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <GraduationCap className="w-12 h-12 text-emerald-600" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{teacher.name}</h3>
-                      <p className="text-emerald-600 font-medium mb-2">📖 {teacher.expertise}</p>
-                      <p className="text-gray-600">🏆 {teacher.specialty}</p>
-                    </div>
-                  ))}
-                </div>
+  {teachers.map((teacher, index) => (
+    <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow">
+      <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-emerald-100">
+        <Image
+          src={teacher.image}
+          alt={teacher.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <h3 className="text-xl font-bold text-gray-900 mb-2">{teacher.name}</h3>
+      <p className="text-emerald-600 font-medium mb-2">📖 {teacher.expertise}</p>
+      <p className="text-gray-600">🏆 {teacher.specialty}</p>
+    </div>
+  ))}
+</div>
               </div>
             </section>
       
@@ -241,9 +270,16 @@ export default function page() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {facilities.map((facility, index) => (
                     <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
-                      <facility.icon className="w-12 h-12 text-emerald-600 mb-4" />
+                      {/* <facility.icon className="w-12 h-12 text-emerald-600 mb-4" /> */}
+
+
+                       <div className='flex gap-2 items-center  justify-center' >
+                        <h1 className='text-4xl' >{facility.icon}</h1>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{facility.title}</h3>
-                      <p className="text-gray-600">{facility.desc}</p>
+                       </div>
+
+
+                      <p className="text-gray-600 text-center">{facility.desc}</p>
                     </div>
                   ))}
                 </div>

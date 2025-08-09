@@ -6,6 +6,7 @@ import {
   Zap
 } from 'lucide-react';
 import TabSection from '@/components/client/admissionPage/TabSection';
+import Link from 'next/link';
 
 const AdmissionPage = () => {
 
@@ -35,10 +36,10 @@ const AdmissionPage = () => {
                 Begin your path of faith and knowledge with us. Experience world-class Islamic education in a nurturing environment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 flex items-center justify-center">
+                <Link href="#down"  className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 flex items-center justify-center">
                   Apply Now
                   <ChevronRight className="w-5 h-5 ml-2" />
-                </button>
+                </Link>
                 <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-4 px-8 rounded-xl transition-all">
                   Download Brochure
                 </button>

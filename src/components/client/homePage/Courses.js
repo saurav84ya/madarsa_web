@@ -64,7 +64,7 @@ export default function Courses() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/courses" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 font-medium inline-flex items-center">
+            <Link href="/home/courses" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 font-medium inline-flex items-center">
               View All Courses <ChevronRight className="ml-2 w-5 h-5" />
             </Link>
           </div>

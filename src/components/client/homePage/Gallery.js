@@ -42,7 +42,7 @@ export default function Gallery() {
 
 
         <div className="text-center mt-12">
-          <Link href="/gallery" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 font-medium inline-flex items-center">
+          <Link href="/home/gallery" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 font-medium inline-flex items-center">
             View Full Gallery <ChevronRight className="ml-2 w-5 h-5" />
           </Link>
         </div>

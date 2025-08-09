@@ -51,7 +51,6 @@ export default function HeroSection() {
 
                 <div>
                     <section className=" flex rounded-2xl overflow-hidden  relative bg-gradient-to-r from-emerald-600 to-teal-600 h-[500px] text-white">
-                        <div className="absolute inset-0 bg-black opacity-50"></div>
                         <div className="relative mx-auto px-4 sm:px-6 lg:px-8 py-10 flex items-center  md:py-24">
                             <div className="text-center  ">
                                 <h1 className="text-4xl md:text-4xl font-bold mb-6">
@@ -61,10 +60,10 @@ export default function HeroSection() {
                                     Nurturing minds and souls through authentic Islamic education combined with modern academic excellence
                                 </p>
                                 <div className="flex flex-col text-center sm:flex-row gap-4 justify-center">
-                                    <Link href="/admission" className="bg-yellow-500 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-flex  items-center">
+                                    <Link href="/home/admission" className="bg-yellow-500 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-flex  items-center">
                                         Apply Now <ChevronRight className="ml-2 w-5 h-5" />
                                     </Link>
-                                    <Link href="/about" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
+                                    <Link href="/home/about" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors">
                                         Learn More
                                     </Link>
                                 </div>
